@@ -30,7 +30,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v3
         with:
-          node-version: v12.x
+          node-version: v0.12.0.x
 
       - name: Build Node assets
         env:
@@ -38,7 +38,7 @@ jobs:
           SITE_URL: ${{ inputs.site-url }}
         run: |
           npm install --legacy-peer-deps
-          npm run build 
+          npm run build
 
 # Please do not touch the following action
       - name: Store deployment content
@@ -46,7 +46,7 @@ jobs:
         with:
           api-key: ${{ secrets.IONOS_API_KEY }}
           service-host: api-us.ionos.space
-          project-id: 9e15ab67-24cd-4216-89a9-12430ecf637e
+          project-id: b4a964ad-8c33-4098-9b83-c313ea950996
           branch-id: ${{ inputs.branch-id }}
           version: ${{ github.sha }}
           folder: ${{ env.DEPLOYMENT_FOLDER }}
