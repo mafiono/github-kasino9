@@ -58,7 +58,7 @@
     "mdbreact": "4.27.0",
     "moment": "2.24.0",
     "namor": "2.0.4",
-    "node-sass": "^8.0.0",
+    "node-sass": "^4.0.0",
     "postcss-rtl": "1.7.3",
     "prismjs": "1.29.0",
     "prop-types": "15.7.2",
