@@ -133,7 +133,7 @@ const AppRoute = connect(mapStateToProps, {})(RouteConfig);
 const RequireAuth = (data) => {
   if (!is_session()) {
     fake_session();
-    return <Redirect to={'/'} />;
+    return;
   }
   for (var i in data.children) {
     if (data.children[i].props.path === data.location.pathname) {
