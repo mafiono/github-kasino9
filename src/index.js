@@ -8,7 +8,7 @@ import { IntlProviderWrapper } from "./utility/context/Internationalization"
 
 const LazyApp = lazy(() => import("./App"))
 
-// configureDatabase()
+configureDatabase()
 
 ReactDOM.render(
     <Provider store={store}>
